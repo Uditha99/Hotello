@@ -21,17 +21,49 @@
 .logo-outer{
     width: 200px;
     height: 100%;
-    border: 1px solid red;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .nav-bar-content{
-    border: 1px solid red;
+
     flex: 1;
 }
 
 .logo-outer > img{
     height: 50px;
+}
 
+.nav-bar-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav{
+    list-style: none;
+    display: flex;
+}
+
+.nav > li >span>a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.nav > li{
+
+    border-right: 1px solid white;
+    padding: 0 35px;
+
+}
+
+.nav>li:last-child{
+    border-right:0;
+}
+
+.nav > li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
 }
