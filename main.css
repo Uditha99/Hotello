@@ -6,6 +6,72 @@
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+body::-webkit-scrollbar{
+    width: 10px;
+    height: 50px;
+}
+body::-webkit-scrollbar-track{
+    background-color: darkgray;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #FF4F03;
+    border-radius: 8px;
+}
+
+.social-outer{
+    width: 50px;
+    height: 200px;
+    display: flex;
+    right: 0;
+    bottom: 150px;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-inner-wrap{
+
+    width: 100%;
+    flex: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.slide-context{
+    width: 150px;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.social-logo{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+
+
+}
+
+.social-logo:hover{
+    background-color: #FF4F03;
+    color: white;
+}
+
+.social-inner-wrap:hover>.slide-context{
+    right: 49px;
+
+}
 .main-slider-outer{
     width: 100%;
     height: 100vh;
@@ -19,6 +85,8 @@
     background-color: #0F172B;
     height: 70px;
     display: flex;
+    position: fixed;
+    width: 100%;
 }
 
 .logo-outer{
@@ -29,6 +97,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .nav-bar-content{
 
     flex: 1;
@@ -43,6 +112,7 @@
     align-items: center;
     justify-content: flex-end;
 }
+
 .nav{
     list-style: none;
     display: flex;
@@ -58,7 +128,7 @@
 .nav > li{
 
     border-right: 1px solid white;
-    padding: 0 35px;
+    padding: 0 25px;
     transition: 1s ease-in-out;
 
 }
@@ -98,6 +168,7 @@
     width: 500px;
     background-color: white;
     border-radius: 6px;
+    display: flex;
 
 }
 
@@ -111,3 +182,28 @@
     align-items: center;
     justify-content: center;
 }
+
+.search_wrapper>input[type=search]{
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 0 20px;
+}
+
+.search_wrapper>input[type=search]:focus{
+    outline: none;
+}
+
+.search-logo{
+    background-color: #FF4F03;
+    color: white;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
